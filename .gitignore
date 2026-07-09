@@ -1,5 +1,6 @@
 node_modules/
 public/
+db.json
 .deploy_git/
 .DS_Store
 npm-debug.log*
