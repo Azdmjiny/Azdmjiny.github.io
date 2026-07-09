@@ -4,8 +4,8 @@
         <div class="author-avatar-wrapper">
           <img
             class="author-avatar"
-            src="https://cdn.jsdelivr.net/gh/dewjohn/CDN@latest/images/avatar.webp"
-            alt="avatar"
+            src="<%- url_for(theme.avatar || 'https://cdn.jsdelivr.net/gh/dewjohn/CDN@latest/images/avatar.webp') %>"
+            alt="<%=config.author%>"
             loading="lazy"
           />
       </div>
