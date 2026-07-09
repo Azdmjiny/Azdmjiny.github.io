@@ -1,0 +1,52 @@
+# favicon
+favicon: /img/favicon.ico
+
+# rss
+rss: /atom.xml
+
+# main menu navigation
+menu:
+  Home: / || Home
+  About: /about/ || About
+  Archives: /archives/ || Archives
+  Tags: /tags/ || Tags
+
+bio:
+  记录技术、阅读与生活。
+
+page_404:
+  enable: true
+  subtitle: "Oops! Page not found."
+
+comments:
+  enable: false
+  type: waline
+  button: false
+
+waline:
+  serverURL:
+  avatarCDN:
+  avatar: monsterid
+  placeholder: "Let me know what you think!"
+
+valine:
+  appid:
+  appkey:
+  notify: false
+  verify: false
+  placeholder: Just go go
+  avatar: mm
+  guest_info: nick,mail,link
+  pageSize: 10
+  recordIP: false
+  serverURLs:
+  emojiCDN:
+  enableQQ: true
+
+# stylesheets loaded in the <head>
+stylesheets:
+  - /css/main.css
+
+# scripts loaded in the end of the body
+scripts:
+  - /js/main.js
