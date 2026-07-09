@@ -332,12 +332,17 @@ h1,
 
   h2 {
     @include relative-font-size(1.375);
+    margin-top: $spacing-full * 1.8;
+    line-height: 1.35;
   }
 
   h3 {
-    @include relative-font-size(1.25);
+    @include relative-font-size(1.08);
+    margin-top: $spacing-full * 1.25;
+    padding-bottom: 6px;
+    line-height: 1.4;
+    color: $dark-gray;
     border-bottom: 1px solid $light;
-    padding-bottom: 4px;
   }
 
   h4 {
