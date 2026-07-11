@@ -13,7 +13,10 @@ pageTitle += ' [ ' + config.title + ' ]';
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><%=pageTitle%></title>
 <% if (theme.favicon){ %>
-  <link rel="icon" href="<%- url_for(theme.favicon) %>">
+  <link rel="icon" type="image/png" href="<%- url_for(theme.favicon) %>">
+<% } %>
+<% if (theme.apple_touch_icon){ %>
+  <link rel="apple-touch-icon" sizes="180x180" href="<%- url_for(theme.apple_touch_icon) %>">
 <% } %>
 <% if(config.author){ %>
     <meta name="author" content="<%- config.author %>">

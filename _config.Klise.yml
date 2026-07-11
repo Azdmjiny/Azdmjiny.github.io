@@ -1,5 +1,6 @@
 # favicon
-favicon: /img/favicon.ico
+favicon: /img/favicon.png
+apple_touch_icon: /img/apple-touch-icon.png
 
 # rss
 rss: /atom.xml
