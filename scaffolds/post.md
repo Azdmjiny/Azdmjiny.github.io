@@ -1,6 +1,6 @@
 ---
 title: {{ title }}
-slug: {{ title }}
+slug: "{{ slug }}"
 date: {{ date }}
 tags:
 ---

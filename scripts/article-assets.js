@@ -8,7 +8,7 @@ hexo.extend.generator.register('article_assets', function (locals) {
   const generators = [];
 
   locals.posts.forEach((post) => {
-    if (!post.source || path.basename(post.source) !== 'article.md') return;
+    if (!post.source || path.extname(post.source) !== '.md') return;
 
     const articleDir = path.join(sourceRoot, path.dirname(post.source));
     if (!fs.existsSync(articleDir)) return;
@@ -16,7 +16,7 @@ hexo.extend.generator.register('article_assets', function (locals) {
     const walk = (dir, relativeDir = '') => {
       for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
         if (entry.name.startsWith('.')) continue;
-        if (entry.name === 'article.md') continue;
+        if (path.extname(entry.name) === '.md') continue;
 
         const absolutePath = path.join(dir, entry.name);
         const relativePath = path.join(relativeDir, entry.name);
