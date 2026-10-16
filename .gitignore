@@ -8,3 +8,9 @@ yarn-debug.log*
 yarn-error.log*
 .env
 /temp/
+notes/
+
+# Obsidian local state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
