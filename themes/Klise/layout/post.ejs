@@ -20,8 +20,5 @@
           <%-partial('partials/pagination')%>
 
 
-<% if (config.cloudflare_analytics_token) { %>
-  <script defer type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;<%= config.cloudflare_analytics_token %>&quot;}"></script>
-<% } %>
    </main>
 </div>
