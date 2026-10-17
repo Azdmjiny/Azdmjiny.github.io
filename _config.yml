@@ -11,6 +11,8 @@ timezone: Asia/Shanghai
 url: https://Azdmjiny.github.io
 root: /
 permalink: :year/:month/:day/:slug/
+# Optional Cloudflare Web Analytics site token (leave blank to disable)
+cloudflare_analytics_token: "90a9fb0e35f04cc2b23d8eaede32da5e"
 permalink_defaults:
 pretty_urls:
   trailing_index: true
