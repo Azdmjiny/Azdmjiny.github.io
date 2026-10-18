@@ -71,6 +71,16 @@ body {
   box-sizing: border-box;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: url("/img/chardin-la-raie.jpg") center / cover no-repeat;
+  opacity: 0.1;
+}
+
 // strong | bold
 strong,
 b {
